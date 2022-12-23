@@ -1,0 +1,1 @@
+export const API_URL = 'https://gateway-dev.crictracker.ml/graphql'
