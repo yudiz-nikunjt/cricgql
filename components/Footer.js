@@ -29,7 +29,6 @@ const Footer = ({ result }) => {
 							<div className={style.footer_links}>
 									{ 
 										item?.aResults?.map((menuItem, index) => {
-											console.log(menuItem)
 											return (
 									<span key={index} className={style.footer_link}>{menuItem?.sTitle}</span>
 										)

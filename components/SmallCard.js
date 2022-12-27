@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import style from "../assets/scss/smallcard.module.scss"
 import moment from "moment"
 import Image from "next/image"
-import oImg from "../assets/images/Kevin-Pietersen.webp"
 import Link from "next/link"
 
 const SmallCard = ({ data, sName }) => {
@@ -21,12 +20,12 @@ const SmallCard = ({ data, sName }) => {
 					<div className={style.smallcard_img}>
 						<Image
 							src={
-								imgURL.includes("https://www.crictracker.com/")
-									? imgURL
-									: `https://crictracker-admin-panel.s3.ap-south-1.amazonaws.com/${imgURL}`
+imgURL.includes("https://www.crictracker.com/")
+									? oImg?.sUrl
+									: `https://crictracker-admin-panel-local-dev-08032022.s3.ap-south-1.amazonaws.com/${imgURL}`
 							}
 							alt="img"
-							height="80"
+							height="50"
 							width="128"
 							layout="responsive"
 							objectFit="cover"

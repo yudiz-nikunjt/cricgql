@@ -14,7 +14,6 @@ const Post = ({ data }) => {
 	const createMarkup = () => {
 		return { __html: data?.sContent }
 	}
-	console.log("data?.oDisplayAuthor?.sUrl", data?.oDisplayAuthor?.sUrl)
 	return (
 		<div className={style.post}>
 			<div className={style.post_breadcrumbs}>
