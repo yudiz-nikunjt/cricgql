@@ -1,10 +1,10 @@
-import Footer from '../components/footer'
 import queryGraphql from '../components/queryGraphql'
 import MyApolloProvider from '../graphql'
 import App from 'next/app'
 import { HEADER_BOTTOM_MENU } from '../graphql/header-bottom-menu'
 import "../assets/scss/globals.scss"
 import Navbar from '../components/Navbar'
+import Navbar from '../components/Footer'
 import Header from '../components/Header'
 import { FOOTER_MENU } from '../graphql/footer'
 
