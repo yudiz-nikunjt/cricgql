@@ -1,0 +1,78 @@
+@use "./variables";
+
+.details {
+	width: 100%;
+	min-height: 100vh;
+	background-color: variables.$secondary-color;
+	padding: 24px 20px;
+	display: grid;
+	grid-template-columns: auto;
+	gap: 30px;
+
+	@include variables.for-large-screen {
+		padding: 24px 75px;
+		grid-template-columns: 1fr auto;
+	}
+
+	@include variables.for-extralarge-screen {
+		grid-template-columns: auto auto auto;
+	}
+
+	&_left {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		display: none;
+		@include variables.for-large-screen {
+			display: flex;
+		}
+	}
+
+	&_clap {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 6px;
+
+		&_icon {
+			border: 1px solid variables.$dark-secondary-color;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			padding: 10px;
+			border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+		}
+	}
+
+	&_middle {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		// background-color: variables.$light-color;
+		border-radius: 16px;
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		-ms-border-radius: 16px;
+		-o-border-radius: 16px;
+	}
+
+	&_right {
+		flex-direction: column;
+		gap: 16px;
+
+		display: flex;
+	}
+}
+
+.gridcard_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 8px;
+}

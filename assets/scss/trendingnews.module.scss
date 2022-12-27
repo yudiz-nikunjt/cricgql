@@ -1,0 +1,67 @@
+@use "./variables";
+
+.trendingnews {
+	display: flex;
+	flex-direction: column;
+
+	&_headline {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		margin-bottom: 16px;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&_list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.news {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			width: 100%;
+			padding: 10px 0px;
+			border-bottom: 1px solid #dedfe3;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			.number {
+				font-size: 20px;
+				font-weight: 700;
+			}
+
+			.desc {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 4px;
+
+				.lable {
+					font-size: 11px;
+					color: variables.$primary-color;
+					background-color: variables.$primary-light-opacity-color;
+					font-weight: 600;
+					border-radius: 20px;
+					padding: 2px 5px;
+					text-transform: uppercase;
+					-webkit-border-radius: 20px;
+					-moz-border-radius: 20px;
+					-ms-border-radius: 20px;
+					-o-border-radius: 20px;
+				}
+
+				.title {
+					font-size: 14px;
+					color: variables.$dark-color;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

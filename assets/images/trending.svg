@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="20px" viewBox="0 0 27 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 112</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Crictracker_Home_28Jul2021_Article" transform="translate(-1203.000000, -565.000000)">
+            <g id="Group-30" transform="translate(1065.000000, 509.000000)">
+                <g id="Group-28" transform="translate(0.000000, 40.000000)">
+                    <g id="Group-112" transform="translate(138.000000, 16.000000)">
+                        <path d="M10,0 L17,0 C22.5228475,-1.01453063e-15 27,4.4771525 27,10 C27,15.5228475 22.5228475,20 17,20 L10,20 C4.4771525,20 6.76353751e-16,15.5228475 0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="Rectangle" fill="#389D25"></path>
+                        <g id="trending_up_black_24dp" transform="translate(4.000000, 1.000000)">
+                            <polygon id="Path" points="0 0 18 0 18 18 0 18"></polygon>
+                            <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="12 4.5 13.7175 6.2175 10.0575 9.8775 7.0575 6.8775 1.5 12.4425 2.5575 13.5 7.0575 9 10.0575 12 14.7825 7.2825 16.5 9 16.5 4.5"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

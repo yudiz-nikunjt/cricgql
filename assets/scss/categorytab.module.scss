@@ -1,0 +1,57 @@
+@use "./variables";
+
+.header {
+	background-color: variables.$light-color;
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	align-items: center;
+	// justify-content: center;
+
+	text-transform: uppercase;
+	z-index: 1000;
+	color: variables.$primary-dark-color;
+	font-weight: 600;
+	font-size: 12px;
+	overflow: hidden;
+	padding: 8px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	@include variables.for-large-screen {
+		padding: 8px;
+	}
+
+	&_container {
+		display: flex;
+		align-items: center;
+		cursor: grab;
+
+		& > div {
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+			padding: 10px 14px;
+			gap: 4px;
+			box-sizing: border-box;
+		}
+
+		& > span {
+			white-space: nowrap;
+			box-sizing: border-box;
+			padding: 10px 14px;
+		}
+	}
+
+	.active {
+		background-color: variables.$primary-light-opacity-color;
+		padding: 8px 14px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+}

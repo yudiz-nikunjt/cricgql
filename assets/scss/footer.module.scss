@@ -1,0 +1,329 @@
+@use "./variables";
+
+.footer {
+	width: 100%;
+	padding: 30px 30px;
+	background-color: variables.$dark-color;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-radius: 14px 14px 0px 0px;
+	-webkit-border-radius: 14px 14px 0px 0px;
+	-moz-border-radius: 14px 14px 0px 0px;
+	-ms-border-radius: 14px 14px 0px 0px;
+	-o-border-radius: 14px 14px 0px 0px;
+
+	@include variables.for-large-screen {
+		padding: 30px 75px;
+	}
+
+	&_sections {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+
+		@include variables.for-large-screen {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+
+	&_topSeries {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: left;
+
+		@include variables.for-medium-screen {
+			align-items: center;
+			text-align: center;
+		}
+		.footer_heading {
+			display: flex;
+			width: 100%;
+			margin: 0px 0px 16px 0px;
+			flex-direction: column;
+			align-items: flex-start;
+
+			gap: 8px;
+			@include variables.for-medium-screen {
+				display: grid;
+				align-items: center;
+				grid-template-columns: 1fr auto 1fr;
+			}
+
+			&_line {
+				display: none;
+				@include variables.for-medium-screen {
+					display: flex;
+					width: 100%;
+					height: 1px;
+					background-color: variables.$dark-light-color;
+				}
+			}
+
+			&_lbl {
+				font-size: 14px;
+				font-weight: bold;
+				// text-align: right;
+				text-transform: uppercase;
+				color: variables.$primary-light-color;
+				text-transform: uppercase;
+				border-radius: 50px;
+				white-space: nowrap;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;
+				-o-border-radius: 50px;
+			}
+		}
+	}
+	&_topTeam {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: left;
+
+		@include variables.for-medium-screen {
+			align-items: center;
+			text-align: center;
+		}
+		.footer_heading {
+			display: flex;
+			width: 100%;
+			margin: 0px 0px 16px 0px;
+			flex-direction: column;
+			align-items: flex-start;
+
+			gap: 8px;
+			@include variables.for-medium-screen {
+				display: grid;
+				align-items: center;
+				grid-template-columns: 1fr auto 1fr;
+			}
+
+			&_line {
+				display: none;
+				@include variables.for-medium-screen {
+					display: flex;
+					width: 100%;
+					height: 1px;
+					background-color: variables.$dark-light-color;
+				}
+			}
+
+			&_lbl {
+				font-size: 14px;
+				font-weight: bold;
+				// text-align: right;
+				text-transform: uppercase;
+				color: variables.$primary-light-color;
+				text-transform: uppercase;
+				border-radius: 50px;
+				white-space: nowrap;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;
+				-o-border-radius: 50px;
+			}
+		}
+	}
+	&_topPlayers {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+
+		@include variables.for-medium-screen {
+			align-items: center;
+			text-align: center;
+		}
+		.footer_heading {
+			display: flex;
+			width: 100%;
+			margin: 0px 0px 16px 0px;
+			flex-direction: column;
+			align-items: flex-end;
+
+			gap: 8px;
+			@include variables.for-medium-screen {
+				display: grid;
+				grid-template-columns: 1fr auto 1fr;
+				align-items: center;
+			}
+
+			&_line {
+				display: none;
+				@include variables.for-medium-screen {
+					display: flex;
+					width: 100%;
+					height: 1px;
+					background-color: variables.$dark-light-color;
+				}
+			}
+
+			&_lbl {
+				font-size: 14px;
+				font-weight: bold;
+				// text-align: right;
+				text-transform: uppercase;
+				color: variables.$primary-light-color;
+				text-transform: uppercase;
+				border-radius: 50px;
+				white-space: nowrap;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;
+				-o-border-radius: 50px;
+			}
+		}
+	}
+	&_more {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+
+		@include variables.for-medium-screen {
+			align-items: center;
+			text-align: center;
+		}
+
+		.footer_heading {
+			display: flex;
+			width: 100%;
+			margin: 0px 0px 16px 0px;
+			flex-direction: column;
+			align-items: flex-end;
+
+			gap: 8px;
+			@include variables.for-medium-screen {
+				display: grid;
+				grid-template-columns: 1fr auto 1fr;
+				align-items: center;
+			}
+
+			&_line {
+				display: none;
+				@include variables.for-medium-screen {
+					display: flex;
+					width: 100%;
+					height: 1px;
+					background-color: variables.$dark-light-color;
+				}
+			}
+
+			&_lbl {
+				font-size: 14px;
+				font-weight: bold;
+				// text-align: right;
+				text-transform: uppercase;
+				color: variables.$primary-light-color;
+				text-transform: uppercase;
+				border-radius: 50px;
+				white-space: nowrap;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;
+				-o-border-radius: 50px;
+			}
+		}
+	}
+
+	&_links {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		color: variables.$primary-light-opacity-color;
+		font-size: 14px;
+	}
+
+	hr {
+		border: 1px solid variables.$secondary-color;
+		width: 100%;
+	}
+
+	&_divider {
+		width: 100%;
+		height: 1px;
+		background-color: variables.$dark-light-color;
+	}
+
+	&_bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		width: 100%;
+
+		&_up {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+			width: 100%;
+			@include variables.for-large-screen {
+				flex-direction: row;
+			}
+		}
+		&_down {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+
+			@include variables.for-large-screen {
+				flex-direction: row;
+			}
+
+			&__left {
+				color: variables.$light-color;
+				font-size: 12px;
+			}
+		}
+		&_middle {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 24px;
+			width: 100%;
+			flex-direction: column;
+
+			@include variables.for-large-screen {
+				display: flex;
+				flex-direction: row;
+			}
+
+			&__left {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+			}
+		}
+	}
+
+	&_nav {
+		text-transform: uppercase;
+		color: variables.$light-color;
+		align-items: center;
+		font-size: 12px;
+		font-weight: 500;
+		gap: 20px;
+		display: none;
+		@include variables.for-large-screen {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	&_social_nav {
+		text-transform: uppercase;
+		color: variables.$light-color;
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		font-weight: 500;
+		gap: 12px;
+	}
+}

@@ -1,0 +1,88 @@
+@use "./variables";
+
+.navbar {
+	background: variables.$primary-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 16px;
+
+	@include variables.for-large-screen {
+		padding: 16px 75px;
+	}
+
+	&_left {
+		display: flex;
+		align-items: center;
+	}
+
+	&_dropdown {
+		&__container {
+			padding-left: 10px;
+			border-left: 1px solid variables.$light-opacity-color;
+		}
+
+		background: transparent;
+		color: variables.$light-color;
+		font-size: 14px;
+		outline: none;
+		border: none;
+	}
+
+	&_logo {
+		padding-right: 12px !important;
+	}
+
+	&_btn__outlined {
+		display: none;
+		align-items: center;
+		gap: 4px;
+		font-size: 12px;
+		color: variables.$light-color;
+		border: 1px solid variables.$light-opacity-color;
+		padding: 6px 12px;
+		font-weight: 600;
+		border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+
+		@include variables.for-large-screen {
+			display: flex;
+		}
+	}
+
+	&_btn__filled {
+		display: none;
+		align-items: center;
+		gap: 4px;
+		font-size: 12px;
+		color: variables.$primary-color;
+		background-color: variables.$light-color;
+		border: 1px solid variables.$light-opacity-color;
+		padding: 6px 12px;
+		font-weight: 600;
+		border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		@include variables.for-large-screen {
+			display: flex;
+		}
+	}
+
+	&_right {
+		display: flex;
+		gap: 16px;
+	}
+
+	&_hamburger {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 16px;
+		border-left: 1px solid variables.$light-opacity-color;
+	}
+}

@@ -1,0 +1,113 @@
+@use "./variables";
+
+.home {
+	min-height: 100vh;
+	background-color: variables.$secondary-color;
+	max-width: 1440px;
+	display: grid;
+	grid-template-columns: auto;
+	gap: 30px;
+	padding: 24px 20px;
+
+	&_container {
+		width: 100%;
+		background-color: variables.$secondary-color;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@include variables.for-large-screen {
+		grid-template-columns: 1fr auto;
+		padding: 24px 75px;
+	}
+	@include variables.for-extralarge-screen {
+		grid-template-columns: 1fr auto 1fr;
+		padding: 24px 75px;
+	}
+
+	&_left {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+
+		&_bottom {
+			width: 100%;
+			display: none;
+			flex-direction: column;
+			gap: 28px;
+
+			@include variables.for-large-screen {
+				display: flex;
+			}
+
+			@include variables.for-extralarge-screen {
+				display: none;
+			}
+		}
+	}
+
+	&_middle {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		// max-width: 578px;
+		min-width: auto;
+
+		@include variables.for-large-screen {
+			min-width: 580px;
+		}
+
+		&_articles {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		.notFound {
+			display: flex;
+			width: 100%;
+			background-color: variables.$light-color;
+			align-items: center;
+			flex-direction: column;
+			padding: 34px 14px;
+			border-radius: 16px;
+			span {
+			}
+			.tabTitle {
+				font-weight: 600;
+				font-size: 24px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&_right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+
+		@include variables.for-large-screen {
+			display: none;
+		}
+		@include variables.for-extralarge-screen {
+			width: 320px;
+			display: flex;
+		}
+	}
+}
+
+.gridcard_container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px;
+
+	@include variables.for-medium-screen {
+		grid-template-columns: 1fr 1fr;
+	}
+	@include variables.for-large-screen {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

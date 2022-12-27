@@ -1,0 +1,77 @@
+@use "./variables";
+
+.cricSpecial {
+	padding: 16px;
+	width: 100%;
+	background: variables.$dark-dark-color;
+	color: #fff;
+	border-radius: 16px;
+	.item {
+		padding-bottom: 12px;
+	}
+
+	h3 {
+		display: flex;
+		align-self: start;
+		gap: 6px;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	h3 svg {
+		margin-right: 8px;
+	}
+	a:hover {
+		color: variables.$primary-light-color;
+	}
+	.postimg {
+		border-radius: 12px;
+	}
+	.badge {
+		margin: 8px 0;
+		display: inline-block;
+	}
+}
+
+.slider {
+	width: 100%;
+
+	@include variables.for-extralarge-screen {
+		width: 300px;
+	}
+
+	&_item {
+		width: 100%;
+	}
+
+	&_image {
+		overflow: hidden;
+		border-radius: 12px;
+	}
+
+	&_label {
+		text-transform: uppercase;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		margin: 8px 0px;
+
+		& > span {
+			background-color: variables.$light-opacity-color;
+			color: variables.$light-color;
+			padding: 2px 5px;
+			font-size: 12px;
+			border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+		}
+	}
+
+	&_desc {
+		font-size: 16px;
+		font-weight: 600;
+	}
+}

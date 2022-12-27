@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_live</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Crictracker_Home_28Jul2021_Videos" transform="translate(-185.000000, -216.000000)">
+            <g id="Group-58" transform="translate(0.000000, 206.000000)">
+                <g id="Group-96" transform="translate(185.000000, 8.000000)">
+                    <g id="ic_live" transform="translate(0.000000, 2.000000)">
+                        <rect id="Rectangle" fill-opacity="0" fill="#000000" x="0" y="0" width="20" height="20"></rect>
+                        <circle id="Oval-Copy-2" fill="#FF0000" opacity="0.142850654" cx="10" cy="10" r="9"></circle>
+                        <circle id="Oval" fill="#FF0000" cx="10" cy="10" r="3.33333333"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
